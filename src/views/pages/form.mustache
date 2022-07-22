@@ -1,0 +1,23 @@
+{{>partials/header}}
+<form method="GET">
+<h3>Informe seu nome</h3>
+<input type="text" name="nome1" placeholder="Seu nome">
+
+<h3>Informe sua idade</h3>
+<input type="text" name="idade" placeholder="Sua idade">
+
+<h3>Informe seu telefone</h3>
+<input type="text" name="telefone" placeholder="Seu telefone">
+
+<h3>Informe seu endereço</h3>
+<input type="text" name="endereco" placeholder="Seu endereço">
+
+<br>
+<button type="submit">Enviar</button>
+</form>
+
+{{#mostraMensagem}}
+Salve, meu nome é {{nome1}} tenho {{idade}} anos e estou {{endereco}}
+{{/mostraMensagem}}
+
+{{>partials/footer}}

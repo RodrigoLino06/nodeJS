@@ -1,0 +1,21 @@
+{{>partials/header}}
+
+<form method="POST" action="bemvindo">
+
+<h3>Cadastro</h3>
+<h4>Insira seu E-mail</h4>
+<input type="text" name="email" placeholder="E-mail">
+<br>
+<h4>Insira sua senha</h4>
+<input type="text" name="senha" placeholder="Senha">
+<br>
+<br>
+<input type="submit" value="Enviar">
+
+</form>
+
+{{#mostraMensagem}}
+Seja bem vindo
+{{/mostraMensagem}}
+
+{{>partials/footer}}
